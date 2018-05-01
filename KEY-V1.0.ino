@@ -32,7 +32,7 @@ void digitalCallback(char *data, uint16_t len) {
 
      String message = String(data);
       message.trim();
-      if (message == "ON") {AnalogRead(A0);}
+      if (message == "ON") {digitalWrite(D7, HIGH); AnalogRead(A0);}
       if (message == "OFF") {digitalWrite(D7, LOW);} 
 }
 
