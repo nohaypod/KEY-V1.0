@@ -52,6 +52,7 @@ unsigned long previousMillis = 0;
 void setup() {
 
   pinMode(D7, OUTPUT); // D6 salida digital
+  pinMode(A0, INPUT); // 
   digitalWrite(D7, LOW);
 
 
